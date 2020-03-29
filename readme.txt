@@ -1,4 +1,19 @@
-There is two notebooks - notebook-A and notebook-B.
+Necessary files from repository which used in  the project : 
+
+-- gcvs5.txt
+-- Notebook-A.ipynb
+-- Notebook-B.ipynb 
+-- df1_homogen_zg.csv 
+-- df1_homogen_zr.csv
+-- df1_homogen_summ.csv 
+
+
+
+------ gcvs5 ----------
+
+Edited version of General Catalog of Variable Stars.
+
+
 
 ------ Notebook-A ----------
 
@@ -20,13 +35,28 @@ There are three ways to make homogenuous data:
 
 ------ Notebook-B ----------
 
-1) "Features" function creates new dataframe with features for futher machine learning treatment.
+1) "Features" (var_type, df) function creates new dataframe with features for futher machine learning treatment.
 
-2) "Metrics" function calculates different metrics for dataframe provided. It implies that there are only one type of interest - var_type 
+var_type - variable type of interest
+df - initial dataframe
+
+2) "Metrics" (df) function calculates different metrics for dataframe provided. It implies that there are only one type of interest - var_type 
 and so it results in balanced dataframe with n object of var_type and n objects of different types (randomly selected from dataframe).
 
-3) "Metrics_classic" function works the same way but instead of "Metrics" it expects already labeled small dataframe. It can be used for example, 
+df-dataframe which was returned by "Features".
+
+3) "Metrics_classic"(df) function works the same way but instead of "Metrics" it expects already labeled small dataframe. It can be used for example, 
 to analyze the differences between the same type ('DCEP') in zg and zr filters (dcep_zg/ dcep_zr).
+
+
+df-dataframe which was returned by "Compare".
+
+4) "Compare" (var_type,df1,df2) function works the same way as "Features" but 
+
+var_type - variable type of interest
+df1 - dataframe of zg filter
+df2 - dataframe of zr filter
+
 
 ----------------------------
 
