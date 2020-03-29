@@ -11,12 +11,11 @@ the response of such time series.
 
 There are three ways to make homogenuous data:
 
---zg: From '1' and '2' folder select only zg-objects with more than "hold" observations, from '4' folder take zg with more than "hold" observations. 
---zr: From '1' and '2' folder select only zr-objects with more than "hold" observations, from '4' folder take zr with more than "hold" observations
+--zg: From '1' and '2' folder select only zg-objects , from '4' folder take zg with maximum amount of observations among all zg objects. 
+--zr: From '1' and '2' folder select only zr-objects , from '4' folder take zr with maximum amount of observations among all zg objects
 --summ: From '2' folder select both zg and zr if min(zg,zr)> hold, from '4' folder select max(zg1,zg1), max(zr1,zr1) if min(max(zg1,zg1), max(zr1,zr1)) > hold.
 
 3) "homogen" and "homogen_summ" functions were made to process the files and make single dataframes with such homodenuous data.
-
 
 
 ------ Notebook-B ----------
@@ -28,3 +27,13 @@ and so it results in balanced dataframe with n object of var_type and n objects 
 
 3) "Metrics_classic" function works the same way but instead of "Metrics" it expects already labeled small dataframe. It can be used for example, 
 to analyze the differences between the same type ('DCEP') in zg and zr filters (dcep_zg/ dcep_zr).
+
+----------------------------
+
+In Notebook-B one can find the lines of uploading three files of ready homogenuous data (df1_homogen_zg/ df1_homogen_zr/ df1_homogen_summ). This tables were made 
+in the way described above, except 'df1_homogen_summ' file has no selection by 'hold', it contains only min out of two objects.
+
+
+
+
+
