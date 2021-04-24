@@ -1,21 +1,21 @@
 Necessary files from repository which used in  the project : 
 
--- gcvs5.txt
--- Notebook-A.ipynb
--- Notebook-B.ipynb 
--- df1_homogen_zg.csv 
--- df1_homogen_zr.csv
--- df1_homogen_summ.csv 
+ - gcvs5.txt
+ - Notebook-A.ipynb
+ - Notebook-B.ipynb 
+ - df1_homogen_zg.csv 
+ - df1_homogen_zr.csv
+ - df1_homogen_summ.csv 
 
 
 
------- gcvs5 ----------
+ - gcvs5 
 
 Edited version of General Catalog of Variable Stars.
 
 
 
------- Notebook-A ----------
+- Notebook-A ----------
 
 Notebook-A makes step by step process of downloading, treatment and homogenuous data making.
 
@@ -33,7 +33,7 @@ There are three ways to make homogenuous data:
 3) "homogen" and "homogen_summ" functions were made to process the files and make single dataframes with such homodenuous data.
 
 
------- Notebook-B ----------
+- Notebook-B ----------
 
 1) "Features" (var_type, df) function creates new dataframe with features for futher machine learning treatment.
 
@@ -56,9 +56,6 @@ df-dataframe which was returned by "Compare".
 var_type - variable type of interest
 df1 - dataframe of zg filter
 df2 - dataframe of zr filter
-
-
-----------------------------
 
 In Notebook-B one can find the lines of uploading three files of ready homogenuous data (df1_homogen_zg/ df1_homogen_zr/ df1_homogen_summ). This tables were made 
 in the way described above, except 'df1_homogen_summ' file has no selection by 'hold', it contains only min out of two objects.
