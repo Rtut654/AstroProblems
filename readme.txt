@@ -1,7 +1,7 @@
-Necessary files from repository which used in  the project : 
+Necessary files from repository which used in  the project: 
 
- - gcvs5.txt
- - Notebook-A.ipynb
+- gcvs5.txt
+- Notebook-A.ipynb
 - Notebook-B.ipynb 
 - df1_homogen_zg.csv 
 - df1_homogen_zr.csv
